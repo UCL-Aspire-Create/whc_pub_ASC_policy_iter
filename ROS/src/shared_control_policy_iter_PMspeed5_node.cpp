@@ -157,6 +157,7 @@ private:
       publish_velocity_cmd(vr,omegar); // vr [m/s], omegar [rad/s]
    } // void sharedControlAlgo()
 
+   // member function: helper function	
    void publish_velocity_cmd(double vr, double omegar) {
       //def&ini: ini for safety reasons
       geometry_msgs::TwistStamped vel_cmd_msg;
