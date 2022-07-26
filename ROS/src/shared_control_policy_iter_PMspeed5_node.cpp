@@ -163,9 +163,9 @@ private:
       geometry_msgs::TwistStamped vel_cmd_msg;
 
       // ROS
-      vel_cmd_msg.twist.linear.x   = vr; //[m/s] 
-      vel_cmd_msg.twist.angular.z  = omegar; //[rad/s] 
       vel_cmd_msg.header.stamp = ros::Time::now();
+      vel_cmd_msg.twist.linear.x   = vr; //[m/s] 
+      vel_cmd_msg.twist.angular.z  = omegar; //[rad/s]       
 
       vel_cmd_pub.publish(vel_cmd_msg);
    }
